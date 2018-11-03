@@ -1,0 +1,6 @@
+List = [', you suck!', ', you have no friends']
+a = 'raushan'
+
+import random
+b = random.choice(List)
+print(a+b)
