@@ -1,0 +1,7 @@
+age = 16
+mhr = 0.7*(225-age)
+b = (0.75*mhr)
+b = b * 10
+b = int(b)
+b = b / 10
+print(b)
