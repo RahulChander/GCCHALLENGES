@@ -1,0 +1,19 @@
+import random
+List = []
+sum = 0
+for i in range(50):
+    a = random.randint(0,100)
+    List.append(a)
+    sum += a
+small = 100000
+large = 0
+for j in List:
+    if j < small:
+        small = j
+    if j > large:
+        large = j
+print(small)
+print(large)
+print(sum/50)
+print(List)
+
