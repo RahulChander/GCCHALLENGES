@@ -1,0 +1,28 @@
+import random
+
+while True:
+
+    PlayerC = input("Please enter S for silent and R to reveal")
+    List = ['S','R']
+    ComputerC = random.choice(List)
+
+    if PlayerC == 'S' and ComputerC == 'R':
+        print("Computer Punishment: 0 Years")
+        print("Player Punishment: 10 Years")
+
+    elif PlayerC == 'S' and ComputerC == 'S':
+        print("Computer Punishment: 1 Years")
+        print("Player Punishment: 1 Years")
+
+    elif PlayerC == 'R' and ComputerC == 'R':
+        print("Computer Punishment: 3 Years")
+        print("Player Punishment: 3 Years")
+
+    elif PlayerC == 'R' and ComputerC == 'S':
+        print("Computer Punishment: 10 Years")
+        print("Player Punishment: 0 Years")
+
+
+    b = input("Please press . and enter if you want to continue, press any other key to end")
+    if b != '.':
+        break
