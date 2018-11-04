@@ -1,0 +1,11 @@
+# Drunkometer
+
+phrase = "betty bought a bit of butter but the butter was bitter"
+
+a = input("Please type phrase exactly")
+b = input("Please type phrase exactly")
+
+while a != b:
+    print ("You are drunk")
+    a = input("Please type phrase exactly")
+    b = input("Please type phrase exactly")
