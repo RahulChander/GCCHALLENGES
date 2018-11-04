@@ -1,0 +1,16 @@
+a = int(input("Please enter hours"))
+b = (input("Please enter minutes"))
+c = input("Pls enter a for am and p for pm")
+
+a = a % 12
+
+if c == 'p':
+    a = a + 12
+
+string = (str(a) + ':' + str(b) + ' hours.')
+
+
+if len(string) == 3:
+    string = '0' + string
+
+print(string)
