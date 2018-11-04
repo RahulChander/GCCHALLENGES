@@ -1,0 +1,24 @@
+Vend = ['Coke can', 'Coke Bottle']
+Price = [2.00,3.00]
+for i in range(2):
+    print ("Please enter keycode " + str(i) + ' for ' + Vend[i] + ' at cost of ' + str(Price[i]))
+
+a = int(input("Please enter product keycode number"))
+try:
+    w = Vend[a]
+    print("Price is " + str(Price[a]))
+
+except:
+    print("Invalid")
+
+price = Price[a]
+while price > 0:
+    coin = float(input("Please enter coin denomination"))
+    price -= coin
+    price = price * 100
+    price = int(price)
+    price /= 100
+    print("Balance is " + str(price))
+
+print("Dispensing item")
+print("Change is " + str(-1*price))
