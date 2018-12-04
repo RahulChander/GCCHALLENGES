@@ -1,0 +1,19 @@
+a = 1
+b = 1
+
+List = [1,1]
+
+check = 0
+
+for i in range(100):
+    if check == 0:
+        a = a + b
+        List.append(a)
+        check = 1
+
+    elif check == 1:
+        b = a + b
+        List.append(b)
+        check = 0
+
+print(List)
