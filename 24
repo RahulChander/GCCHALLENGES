@@ -1,0 +1,6 @@
+a = input("Please enter float")
+try:
+    b = float(a)
+    print("Acceptable")
+except:
+    print("Error")
